@@ -3,8 +3,8 @@
 
 # Install foundry modules
 install:
-	forge install foundry-rs/forge-std@v1.9.7 --no-commit && \
-	forge install OpenZeppelin/openzeppelin-contracts@v5.3.0 --no-commit
+	forge install foundry-rs/forge-std@v1.9.7 && \
+	forge install OpenZeppelin/openzeppelin-contracts@v5.3.0
 
 # Remove foundry modules
 remove:
