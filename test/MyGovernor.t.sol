@@ -60,7 +60,7 @@ contract MyGovernorTest is Test {
         // - The TimeLock owns the Governor (DAO)
     }
 
-    function test_canUpdateBoxWithoutGovernance() public{
+    function test_canUpdateBoxWithoutGovernance() public {
         bytes memory revertMessage = abi.encodeWithSelector(Ownable.OwnableUnauthorizedAccount.selector, USER);
         vm.expectRevert(revertMessage);
         vm.prank(USER);
